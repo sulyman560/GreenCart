@@ -151,7 +151,7 @@ export const stripeWebhooks= async(request, response) =>{
 
     //Handle the event
     switch (event.type) {
-        case "payment_instent_succeeded":{
+        case "payment_intent.succeeded":{
             const paymentIntent = event.data.object;
             const paymentIntentId = paymentIntent.id;
 
@@ -166,7 +166,7 @@ export const stripeWebhooks= async(request, response) =>{
             await User.findByIdAndUpdate(userId, {cartItems: {}})
             break;
         }
-        case "payment_instent_failed":{
+        case "payment_intent_failed":{
             const paymentIntent = event.data.object;
             const paymentIntentId = paymentIntent.id;
 
