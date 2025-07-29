@@ -23,9 +23,13 @@ const Cart = () => {
     }
     const placeOrder = async () => {
         try {
-            if (getCartAmount() === 0) {
-                toast.error("Please Add an item")
-                return navigate('/cart')
+            if (user) {
+                if (getCartAmount() === 0) {
+                    toast.error("Please Add an item")
+                    return navigate('/cart')
+                }
+            } else {
+                return toast.error("Please Sign up or Login an account")
             }
             if (!selectedAddress) {
                 return toast.error("Please select an address")
