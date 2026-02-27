@@ -115,7 +115,7 @@ const Navber = () => {
                 <NavLink to='/products' onClick={() => setOpen(false)}>All Product</NavLink>
                 {
                     user &&
-                    <NavLink onClick={() => navigate("my-orders")}>My Orders</NavLink>
+                    <li onClick={() => navigate("my-orders")}>My Orders</li>
                 }
 
                 <NavLink to='/contact' onClick={() => setOpen(false)}>Contact</NavLink>
