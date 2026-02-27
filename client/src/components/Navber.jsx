@@ -95,7 +95,7 @@ const Navber = () => {
                     <button className="absolute -top-2 -right-3 text-xs text-white bg-primary w-[18px] h-[18px] rounded-full">{getCartCount()}</button>
 
                 </div>
-                <button onClick={() => open ? setOpen(false) : setOpen(true)} aria-label="Menu" className="">
+                <button onClick={() => open ? setOpen(false) : setOpen(true)} aria-label="Menu" className="cursor-pointer">
 
                     {/* Menu Icon SVG */}
 
