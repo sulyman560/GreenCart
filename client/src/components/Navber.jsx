@@ -29,7 +29,7 @@ const Navber = () => {
         }
     }, [searchQuery])
     return (
-        <nav className="sticky fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-black/10 flex items-center justify-between px-6 md:px-16 lg:px-24 xl:px-32 py-4 border-b border-gray-300 relative transition-all">
+        <nav className="sticky fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-green/10 flex items-center justify-between px-6 md:px-16 lg:px-24 xl:px-32 py-4 border-b border-gray-300 relative transition-all">
 
 
             <NavLink to='/' onClick={() => setOpen(false)}>
