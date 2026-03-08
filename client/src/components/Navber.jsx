@@ -115,7 +115,7 @@ const Navber = () => {
                 <NavLink to='/products' onClick={() => setOpen(false)} className='hover:bg-gray-100 w-full rounded px-4 py-2'>All Product</NavLink>
                 {
                     user &&
-                    <NavLink to='/my-orders' onClick={() => { setOpen(false)}} className='cursor-pointer hover:bg-gray-100 w-full rounded px-4 py-2'>My Orders</NavLink>
+                    <NavLink to='/my-orders' onClick={() => setOpen(false)} className='cursor-pointer hover:bg-gray-100 w-full rounded px-4 py-2'>My Orders</NavLink>
                 }
 
                 <NavLink to='/contact' onClick={() => setOpen(false)} className='hover:bg-gray-100 w-full rounded px-4 py-2'>Contact</NavLink>
