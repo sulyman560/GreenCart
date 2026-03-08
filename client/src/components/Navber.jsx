@@ -110,15 +110,15 @@ const Navber = () => {
 
             <div className={`${open ? 'flex z-10' : 'hidden'} absolute top-[60px] left-0 w-full bg-white shadow-md py-4 flex-col items-start gap-4 px-5 text-sm md:hidden`}>
 
-                <NavLink to='/' onClick={() => setOpen(false)} className='bg-gray-500/30'>Home</NavLink>
+                <NavLink to='/' onClick={() => setOpen(false)} className='hover:bg-gray-100 w-full rounded px-4 py-2'>Home</NavLink>
 
-                <NavLink to='/products' onClick={() => setOpen(false)}>All Product</NavLink>
+                <NavLink to='/products' onClick={() => setOpen(false)} className='hover:bg-gray-100 w-full rounded px-4 py-2'>All Product</NavLink>
                 {
                     user &&
-                    <button className='cursor-pointer' onClick={() => { navigate("my-orders"); setOpen(false)}}>My Orders</button>
+                    <button className='cursor-pointer' onClick={() => { navigate("my-orders"); setOpen(false)}} className='hover:bg-gray-100 w-full rounded px-4 py-2'>My Orders</button>
                 }
 
-                <NavLink to='/contact' onClick={() => setOpen(false)}>Contact</NavLink>
+                <NavLink to='/contact' onClick={() => setOpen(false)} className='hover:bg-gray-100 w-full rounded px-4 py-2'>Contact</NavLink>
                 {
                     !user ? (
                         <button onClick={() => {
